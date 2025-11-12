@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shadows and Depth</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px;
+  background: #f0f0f0;
+  font-family: Arial;
+}
+.card {
+  width: 200px; height: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.card h3 { text-shadow: 2px 2px 5px rgba(0,0,0,0.3); }
+.card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.4); transform: translateY(-5px); }
+</style>
+</head>
+<body>
+<div class="card"><h3>Card 1</h3><p>Basic shadow</p></div>
+<div class="card"><h3>Card 2</h3><p>Medium shadow</p></div>
+<div class="card"><h3>Card 3</h3><p>Lift on hover</p></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tooltip Demo</title>
+<style>
+body {
+  display:flex; justify-content:center; align-items:center;
+  height:100vh; gap:40px; background:#f0f0f0; font-family:Arial;
+}
+.tooltip {
+  position: relative; cursor: pointer; font-size:20px;
+}
+.tooltip .tip {
+  position: absolute; bottom:125%; left:50%; transform:translateX(-50%);
+  background:black; color:white; padding:6px 10px; border-radius:6px;
+  opacity:0; transition:opacity 0.3s ease-in-out;
+  pointer-events:none; white-space:nowrap;
+}
+.tooltip:hover .tip { opacity:1; }
+</style>
+</head>
+<body>
+<div class="tooltip">💡
+  <span class="tip">This is a tooltip</span>
+</div>
+<div class="tooltip">📘
+  <span class="tip">CSS Tooltips with only CSS</span>
+</div>
+<div class="tooltip">⚙️
+  <span class="tip">Hover for info</span>
+</div>
+</body>
+</html>

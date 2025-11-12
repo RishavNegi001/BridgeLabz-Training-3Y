@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Height & Width Practice</title>
+<style>
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #eef;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.box1 { width: 150px; height: 100px; background: #007bff; }
+.box2 { width: 20%; min-height: 150px; background: #28a745; overflow: auto; }
+.box3 { width: 10em; max-width: 250px; height: 30vh; background: #ff9800; }
+</style>
+</head>
+<body>
+<div class="box box1">px</div>
+<div class="box box2">%</div>
+<div class="box box3">vh/em</div>
+</body>
+</html>
+

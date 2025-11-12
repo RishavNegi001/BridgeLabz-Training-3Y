@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced CSS Selectors</title>
+<style>
+/* Attribute selectors */
+input[type="text"] { border:2px solid #2196f3; }
+a[href^="https"] { color:green; }
+
+/* Pseudo-classes */
+li:hover { background:#ffeb3b; }
+input:focus { outline:3px solid orange; }
+
+/* nth-child */
+li:nth-child(even) { background:#f1f1f1; }
+
+/* Pseudo-elements */
+p::before { content:"→ "; color:#ff5722; }
+p::after { content:" ✓"; color:green; }
+
+/* Combinators */
+ul > li { font-weight:bold; } /* child */
+h2 + p { color:blue; }        /* adjacent sibling */
+h2 ~ ul { border:1px solid #ccc; } /* general sibling */
+div p { color:#333; }         /* descendant */
+</style>
+</head>
+<body>
+<h2>Selectors Demo</h2>
+<p>Learning advanced selectors</p>
+<ul>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ul>
+<input type="text" placeholder="Type here">
+<a href="https://example.com">Secure Link</a>
+</body>
+</html>
