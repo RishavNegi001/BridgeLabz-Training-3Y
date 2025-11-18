@@ -1,0 +1,11 @@
+let expenses = [8000, 1500, 12000, 3000, 2000];  
+let total = expenses.reduce((a, b) => a + b, 0);
+
+let average = (total / expenses.length).toFixed(2);
+
+let taxRate = 0.10;
+let finalAmount = (total + total * taxRate).toFixed(2);
+
+console.log("Total:", total);
+console.log("Average:", average);
+console.log("Final after tax:", finalAmount);

@@ -1,0 +1,17 @@
+let name = "Rishav";
+let age = 20;
+let isStudent = true;
+let skills = ["JS", "HTML", "CSS"];
+let address = { city: "Kotdwar", state: "UK" };
+let futureJob = null;
+let extraInfo;
+
+console.table([
+    { Label: "Name", Value: name, Type: typeof name },
+    { Label: "Age", Value: age, Type: typeof age },
+    { Label: "isStudent", Value: isStudent, Type: typeof isStudent },
+    { Label: "Skills", Value: skills, Type: Array.isArray(skills) ? "array" : typeof skills },
+    { Label: "Address", Value: JSON.stringify(address), Type: typeof address },
+    { Label: "Future Job", Value: futureJob, Type: "null" },
+    { Label: "Extra Info", Value: extraInfo, Type: typeof extraInfo },
+]);
